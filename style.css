@@ -148,6 +148,7 @@ main {
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px 0;
+    background-color: rgb(165, 189, 237);
 }
 
 .book_shelf > .book_list > .book_item > h3, p {
