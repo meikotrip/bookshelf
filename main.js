@@ -112,11 +112,12 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         const title = inputBookTitle.value;
         const author = inputBookAuthor.value;
-        const year = inputBookYear.value;
+        const year = parseInt(inputBookYear.value);
+        console.log(year);
         const isComplete = inputBookIsComplete.checked;
 
         // Memeriksa apakah input telah diisi
-        if (title.trim() === "" || author.trim() === "" || year.trim() === "") {
+        if (title.trim() === "" || author.trim() === "" || year === null) {
             alert("Harap isi semua isian sebelum menambahkan buku.");
             inputBookTitle.focus();
             return;
